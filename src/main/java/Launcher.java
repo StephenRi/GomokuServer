@@ -29,6 +29,7 @@ public class Launcher {
             }
         });
 
+        //处理连接，分房间
         server.addEventListener("linkEvent", LinkMessage.class, new DataListener<LinkMessage>() {
             public void onData(SocketIOClient socketIOClient, LinkMessage linkMessage, AckRequest ackRequest) throws Exception {
                 String userId = linkMessage.getUserId();
