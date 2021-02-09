@@ -10,10 +10,8 @@ import message.LinkMessageAck;
 import message.StepMessage;
 
 public class Launcher {
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException {
         Configuration config = new Configuration();
-        config.setHostname("144.168.59.201");
-        //config.setHostname("localhost");
         config.setPort(9092);
         final SocketIOServer server = new SocketIOServer(config);
 
